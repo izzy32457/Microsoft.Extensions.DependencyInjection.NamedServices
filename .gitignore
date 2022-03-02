@@ -348,3 +348,13 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# Auto-Generated JetBrains Annotation documentation file
+**/*.ExternalAnnotations.xml
+
+# Build generated Nuget packages
+_nupkgs/
+
+# Stryker Output
+StrykerOutput/
+**/StrykerOutput/

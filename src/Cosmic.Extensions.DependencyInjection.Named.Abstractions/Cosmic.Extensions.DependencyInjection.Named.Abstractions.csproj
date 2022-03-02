@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\patterns\shared-library.props" />
+
+  <PropertyGroup>
+    <RootNamespace>Cosmic.Extensions.DependencyInjection</RootNamespace>
+    <PackageDescription>Abstractions to provides support for named service registration and retrieval from the Microsoft.Extensions.DependencyInjection framework.</PackageDescription>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="..\..\stylecop.json" Link="stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reflection.Emit" Version="4.7.0" />
+  </ItemGroup>
+
+</Project>

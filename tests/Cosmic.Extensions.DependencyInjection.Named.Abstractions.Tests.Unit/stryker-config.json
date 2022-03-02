@@ -1,0 +1,7 @@
+{
+	"stryker-config":
+	{
+		"target-framework": "net5.0",
+		"reporters": [ "html", "progress" ]
+	}
+}

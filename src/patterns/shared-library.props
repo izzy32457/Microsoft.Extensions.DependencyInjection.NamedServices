@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project>
+  <Import Project="base-project.props" />
+
+  <!-- Adding common Nuget Package settings -->
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageTags>DependencyInjection;UKA2</PackageTags>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageOutputPath>$(SolutionDir)..\_nupkgs</PackageOutputPath>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>symbols.nupkg</SymbolPackageFormat>
+    <IncludeSource>true</IncludeSource>
+  </PropertyGroup>
+
+  <!-- Adding common Microsoft extension abstractions -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="$(SystemDependencyVersion)" />
+  </ItemGroup>
+
+  <!-- Include JetBrains Annotations -->
+  <PropertyGroup>
+    <FodyGenerateXsd>false</FodyGenerateXsd>
+    <FodyVerifyAssembly>true</FodyVerifyAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Fody" Version="6.6.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="JetBrains.Annotations" Version="2021.3.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="JetBrainsAnnotations.Fody" Version="2.17.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

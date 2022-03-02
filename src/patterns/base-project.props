@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <Import Project="$(SolutionDir)/patterns/target-frameworks.props" />
+  <Import Project="$(SolutionDir)/patterns/company.props" />
+  <Import Project="$(SolutionDir)/patterns/semantic-versioning.props" />
+  <Import Project="$(SolutionDir)/patterns/sign-assemblies.props" />
+
+  <!-- Set assembly properties -->
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <RepositoryType Condition="'$(RepositoryType)' == ''">git</RepositoryType>
+    <RepositoryUrl Condition="'$(RepositoryUrl)' == ''">https://bitbucket.uka2.co.uk/scm/cc/named-service-extensions.git</RepositoryUrl>
+  </PropertyGroup>
+
+  <!-- Enable static analysis -->
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="IDisposableAnalyzers" Version="3.4.15">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel Condition="'$(AnalysisLevel)' == ''">latest</AnalysisLevel>
+    <AnalysisMode Condition="'$(AnalysisMode)' == ''">AllEnabledByDefault</AnalysisMode>
+  </PropertyGroup>
+
+  <!-- Enable documentation generation -->
+  <PropertyGroup>
+    <GenerateDocumentationFile Condition="'$(GenerateDocumentationFile)' == ''">true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+</Project>

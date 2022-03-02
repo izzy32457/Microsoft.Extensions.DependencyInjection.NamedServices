@@ -1,0 +1,8 @@
+{
+	"stryker-config":
+	{
+		"solution": "../../Cosmic.Extensions.DependencyInjection.sln",
+		"target-framework": "net6.0",
+		"reporters": [ "html", "progress" ]
+	}
+}

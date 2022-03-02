@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+  <PropertyGroup>
+    <Company Condition="'$(Company)' == ''">UKA2</Company>
+    <Copyright Condition="'$(Copyright)' == ''">Copyright © 2022 $(Company)</Copyright>
+    <Authors Condition="'$(Authors)' == ''">$(Company)</Authors>
+  </PropertyGroup>
+
+</Project>

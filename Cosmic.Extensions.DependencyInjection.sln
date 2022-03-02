@@ -1,0 +1,82 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patterns", "Patterns", "{4ECB586F-8B61-40A2-BAAF-DD8FFCE4698E}"
+	ProjectSection(SolutionItems) = preProject
+		src\patterns\base-project.props = src\patterns\base-project.props
+		tests\patterns\base-test-project.props = tests\patterns\base-test-project.props
+		patterns\company.props = patterns\company.props
+		patterns\semantic-versioning.props = patterns\semantic-versioning.props
+		src\patterns\shared-library.props = src\patterns\shared-library.props
+		patterns\sign-assemblies.props = patterns\sign-assemblies.props
+		patterns\target-frameworks.props = patterns\target-frameworks.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{62A547FB-2340-4393-9BA4-BAC673C1E1D8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmic.Extensions.DependencyInjection.Named.Abstractions", "src\Cosmic.Extensions.DependencyInjection.Named.Abstractions\Cosmic.Extensions.DependencyInjection.Named.Abstractions.csproj", "{22422EB1-C807-43E0-A1BA-08068CF4BE01}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmic.Extensions.DependencyInjection.Named", "src\Cosmic.Extensions.DependencyInjection.Named\Cosmic.Extensions.DependencyInjection.Named.csproj", "{5EAD7CB1-324B-4592-A257-C9A1D5FD4463}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A43CBB39-E78B-48C8-8FF2-034C13DB7237}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmic.Extensions.DependencyInjection.Named.Tests.Unit", "tests\Cosmic.Extensions.DependencyInjection.Named.Tests.Unit\Cosmic.Extensions.DependencyInjection.Named.Tests.Unit.csproj", "{61EFE804-9290-45A6-A28A-0BD91EF9F188}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmic.Extensions.DependencyInjection.Named.Tests.Inter", "tests\Cosmic.Extensions.DependencyInjection.Named.Tests.Inter\Cosmic.Extensions.DependencyInjection.Named.Tests.Inter.csproj", "{1A5CEEBF-F23A-4E98-8F31-9A0A089A31B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3D70E9D4-25C0-4C3E-AC2D-7A9BD94DF535}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		CODEOWNERS = CODEOWNERS
+		NuGet.Config = NuGet.Config
+		stylecop.json = stylecop.json
+		UKA2-DFS.snk = UKA2-DFS.snk
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cosmic.Extensions.DependencyInjection.Named.Abstractions.Tests.Unit", "tests\Cosmic.Extensions.DependencyInjection.Named.Abstractions.Tests.Unit\Cosmic.Extensions.DependencyInjection.Named.Abstractions.Tests.Unit.csproj", "{FE9ADA92-451F-4BEF-96C6-076C5280FF77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22422EB1-C807-43E0-A1BA-08068CF4BE01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22422EB1-C807-43E0-A1BA-08068CF4BE01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22422EB1-C807-43E0-A1BA-08068CF4BE01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22422EB1-C807-43E0-A1BA-08068CF4BE01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EAD7CB1-324B-4592-A257-C9A1D5FD4463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EAD7CB1-324B-4592-A257-C9A1D5FD4463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EAD7CB1-324B-4592-A257-C9A1D5FD4463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EAD7CB1-324B-4592-A257-C9A1D5FD4463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61EFE804-9290-45A6-A28A-0BD91EF9F188}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61EFE804-9290-45A6-A28A-0BD91EF9F188}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61EFE804-9290-45A6-A28A-0BD91EF9F188}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61EFE804-9290-45A6-A28A-0BD91EF9F188}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A5CEEBF-F23A-4E98-8F31-9A0A089A31B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A5CEEBF-F23A-4E98-8F31-9A0A089A31B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A5CEEBF-F23A-4E98-8F31-9A0A089A31B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A5CEEBF-F23A-4E98-8F31-9A0A089A31B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE9ADA92-451F-4BEF-96C6-076C5280FF77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE9ADA92-451F-4BEF-96C6-076C5280FF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE9ADA92-451F-4BEF-96C6-076C5280FF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE9ADA92-451F-4BEF-96C6-076C5280FF77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4ECB586F-8B61-40A2-BAAF-DD8FFCE4698E} = {3D70E9D4-25C0-4C3E-AC2D-7A9BD94DF535}
+		{22422EB1-C807-43E0-A1BA-08068CF4BE01} = {62A547FB-2340-4393-9BA4-BAC673C1E1D8}
+		{5EAD7CB1-324B-4592-A257-C9A1D5FD4463} = {62A547FB-2340-4393-9BA4-BAC673C1E1D8}
+		{61EFE804-9290-45A6-A28A-0BD91EF9F188} = {A43CBB39-E78B-48C8-8FF2-034C13DB7237}
+		{1A5CEEBF-F23A-4E98-8F31-9A0A089A31B3} = {A43CBB39-E78B-48C8-8FF2-034C13DB7237}
+		{FE9ADA92-451F-4BEF-96C6-076C5280FF77} = {A43CBB39-E78B-48C8-8FF2-034C13DB7237}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {553A245B-7B16-4EAD-A981-794BA13D30B6}
+	EndGlobalSection
+EndGlobal

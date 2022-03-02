@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+
+  <PropertyGroup>
+    <TargetFrameworks Condition="'$(TargetFrameworks)' == ''">net6.0;net5.0;netstandard2.0;net461</TargetFrameworks>
+    <Configurations>Debug;Release</Configurations>
+    <NeutralLanguage>en-GB</NeutralLanguage>
+    <Nullable>enable</Nullable>
+    <LangVersion>Latest</LangVersion>
+    <SystemDependencyVersion Condition="'$(SystemDependencyVersion)' == '' AND ('$(TargetFramework)' == 'net5.0' OR '$(TargetFramework)' == 'netstandard2.0' OR '$(TargetFramework)' == 'net461')">[5.0.0, )</SystemDependencyVersion>
+    <SystemDependencyVersion Condition="'$(SystemDependencyVersion)' == '' AND ('$(TargetFramework)' == 'net6.0')">[6.0.0, )</SystemDependencyVersion>
+  </PropertyGroup>
+
+</Project>
