@@ -1,0 +1,11 @@
+{
+	"stryker-config":
+	{
+		"target-framework": "net5.0",
+		"reporters": [ "html", "progress" ],
+		"test-projects": [
+			"../../tests/Cosmic.Extensions.DependencyInjection.Named.Tests.Unit/Cosmic.Extensions.DependencyInjection.Named.Tests.Unit.csproj",
+			"../../tests/Cosmic.Extensions.DependencyInjection.Named.Tests.Inter/Cosmic.Extensions.DependencyInjection.Named.Tests.Inter.csproj"
+		]
+	}
+}

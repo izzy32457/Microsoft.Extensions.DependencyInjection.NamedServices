@@ -1,6 +1,7 @@
 {
 	"stryker-config":
 	{
+		"language-version": "CSharp9",
 		"target-framework": "net5.0",
 		"reporters": [ "html", "progress" ]
 	}
